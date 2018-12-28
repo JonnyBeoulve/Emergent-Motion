@@ -1,7 +1,7 @@
 {
   "name": "emergent-motion",
   "private": true,
-  "description": "Using Gatsby.js, this project will use React, GraphQL, and more to present helpful physical therapy related health information to the user in blog-style format.",
+  "description": "Built with Gatsby.js, this project harnesses React and GraphQL to present helpful physical therapy related health information to the user in blog-style format.",
   "version": "0.1.0",
   "author": "Jonathan Leack",
   "dependencies": {
