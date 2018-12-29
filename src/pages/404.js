@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+/* This handles UI display when a 404 error occurs. */
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />

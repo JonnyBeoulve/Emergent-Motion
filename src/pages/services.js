@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+/* This section will describe and list services offered by the company. */
 const ServicesPage = () => {
     return (
         <Layout>
@@ -19,7 +20,6 @@ const ServicesPage = () => {
             </ul>
             <Link to="/">Go back to the homepage</Link>
         </Layout>
-
   )
 }
 

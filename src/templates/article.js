@@ -1,24 +1,27 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { graphql } from 'gatsby'
 
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+
+/* Define the template for an article. */
 export default function Template({ data }) {
-  const post = data.markdownRemark
+  const article = data.markdownRemark
 
   return (
-    <div>
-      <Link to="/articles">Go Back</Link>
-      <hr />
-      <h1>{post.frontmatter.title}</h1>
+    <Layout>
+      <SEO title="Physical Therapy health article" />
+      <h1>{article.frontmatter.title}</h1>
       <h4>
-        Posted by {post.frontmatter.author} on {post.frontmatter.date}
+        Written by {article.frontmatter.author} on {article.frontmatter.date}
       </h4>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-    </div>
+      <div dangerouslySetInnerHTML={{ __html: article.html }} />
+    </Layout>
   )
 }
 
-export const postQuery = graphql`
-  query BlogPostByPath($path: String!) {
+export const articleQuery = graphql`
+  query ArticleByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
