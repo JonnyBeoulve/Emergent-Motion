@@ -6,6 +6,7 @@ import Header from './header'
 import Menu from './menu'
 import './layout.css'
 
+/* This defines the general layout for various components of the website. */
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
