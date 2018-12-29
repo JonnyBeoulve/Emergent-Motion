@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Menu = () => {
+/* This is the navigation bar for the app, with links to top level sections. */
+const Nav = () => {
     return (
         <div style={{
             background: '#f3f3f3',
@@ -27,4 +28,4 @@ const Menu = () => {
   )
 }
 
-export default Menu
+export default Nav

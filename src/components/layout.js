@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
-import Menu from './menu'
+import Nav from './nav'
 import './layout.css'
 
 /* This defines the general layout for various components of the website. */
@@ -21,7 +21,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <Menu />
+        <Nav />
         <div
           style={{
             margin: `0 auto`,
