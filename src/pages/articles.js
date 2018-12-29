@@ -27,7 +27,7 @@ const ArticlesPage = ({data}) => {
 }
 
 export const pageQuery = graphql`
-    query BlogIndexQuery {
+    query ArticleIndexQuery {
         allMarkdownRemark {
             edges {
                 node {
