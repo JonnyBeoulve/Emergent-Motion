@@ -1,6 +1,6 @@
 ---
 path: "/post-one"
-date: "2018-12-28"
+date: "2018-12-25"
 title: "Healthy Living"
 author: "Jonathan Leack"
 ---
